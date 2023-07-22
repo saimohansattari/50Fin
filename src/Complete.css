@@ -642,3 +642,10 @@ span {
 
 }
 
+@media only screen and (max-width: 399px){
+  .mobile-container .portfolios .card .img-card img{
+    width: 350px;
+    height: fit-content;
+  }
+}
+
