@@ -1,0 +1,644 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  
+}
+
+html::-webkit-scrollbar {
+  display: none;
+  width: 100vw;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(11, 13, 34);
+  align-items: center;
+  margin: 0;
+}
+
+span {
+  color: rgb(38, 254, 238);
+}
+
+
+
+
+      /* Navbar page Css */
+.navbar {
+  position: fixed;
+  padding: 25px 0px 25px 105px;
+  background-color: rgb(11, 13, 34);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  width: 100vw;
+  overflow: hidden;
+  height: 100px;
+ 
+}
+
+.navbar .nav-icon img {
+
+  width: 85px;
+  height: 45px;
+}
+
+.navbar .nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 130px;
+}
+
+.navbar .nav-buttons #a {
+  font-weight: 500;
+  font: 14px;
+  font-family: sans-serif;
+  margin-left: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.navbar .nav-buttons #a:hover {
+  color: rgb(38, 254, 238);
+}
+
+.navbar .nav-buttons .get-loan {
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 18px;
+  width: 146px;
+  height: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 20px;
+  text-decoration: none;
+  background-color: rgb(38, 254, 238);
+  border: none;
+  border-radius: 25px;
+}
+
+.navbar .nav-buttons .get-loan :hover {
+  color: black;
+}
+
+#icon {
+  color:white;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 1123px) {
+  .navbar {
+    padding: 25px 105px 25px 105px;
+    position: fixed;
+  }
+ 
+  .navbar .list .nav-buttons  {display: none;}
+
+  .navbar #icon {
+    float: right;
+    display: block;   
+  }
+  .navbar.responsive #icon{
+    
+    color:aqua;
+  }
+  .navbar.responsive {
+    padding: 24px;
+  }
+  .navbar.responsive .list{
+    position: fixed;
+    align-items: self-start;
+  }
+  .navbar.responsive .list .nav-buttons {
+    height: 50vh;
+    width:95vw;
+    position: fixed;
+    margin-top: 25px;
+    margin-left: 0;
+    padding: 0px;
+    background-color: rgb(11, 13, 34);
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items:self-start;
+    flex-direction: column;
+    
+  }
+  .navbar.responsive .list .nav-buttons  #a{
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+   
+  }
+  .navbar .nav-buttons .get-loan {
+    margin: 0;
+    width: 309px;
+  }
+
+ 
+
+  .mobile-container .portfolios .card .img-card img{
+    width: 600px;
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+          /* Footer css */
+
+ .footer{
+  background-color:  rgb(11, 13, 34) ;
+  padding: 50px 105px;
+ 
+  
+ }
+
+ .footer .footer-sub{
+  gap: 25px;
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+  
+ }
+
+ .footer .footer-sub .footer-cards{
+  
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .footer .footer-sub .footer-cards  span{
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 21px;
+    font-weight: 600; 
+    letter-spacing: -0.28px;
+    line-height: 23px;
+ }
+ .footer .footer-sub p{
+    color: white;
+ }
+ .footer .footer-sub .footer-cards a{
+  cursor: pointer;
+  line-height: 30px;
+  margin: 0px;
+    color: white;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600; 
+ }
+ .footer .footer-sub .footer-cards p{
+  line-height: 30px;
+  margin: 0px;
+    color: white;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600; 
+ }
+
+ .footer .footer-sub .footer-cards .card .social-accounts {
+  gap: 30px;
+  display: flex;
+  justify-content: space-around;
+ }
+
+ .footer .footer-sub .footer-cards .card .social-accounts a img{
+    width: 40px;
+    border-radius: 9px;
+    height: 40px;
+    background-color: transparent;
+    color: transparent;
+ }
+
+
+
+
+
+ .footer .footer-sub .footer-cards .card .logo-img img {
+  margin-left: 10px;
+  width: 50px;
+  height: 45px;
+ 
+}
+
+ .footer .footer-sub .footer-cards .card button {
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+}
+.footer .footer-sub .footer-cards .card button img {
+  width: 260px;
+  height: 73px;
+}
+
+.footer hr{
+  height:1px;
+  border-width:0;
+  color:rgb(128, 128, 128);
+  background-color:rgba(128, 128, 128, 0.471)
+}
+
+.footer .footer-copy{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Mobile Responsive */
+
+    
+
+
+@media only screen and (max-width: 1286px) {
+  .navbar {
+    padding: 25px 80px 25px 105px;
+  }
+
+  .container-1 .framer {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-around; */
+    /* padding: 0px 60px 0px 60px; */
+    padding: 120px 15px 30px  15px;
+}
+ 
+    .container-1 .card h2 {
+      display: flex;
+      flex-wrap: wrap;
+      color: white;
+      font-size: 39px;
+    }
+    
+    .card-sub h2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 39px;
+    }
+    .card-sub h2 span {
+      font-size: 39px;
+    }
+
+    .card-sub .p1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      width: auto;
+      margin-top: 12px;
+    }
+    
+    .card-sub .p2 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      width: auto;
+      font-size: 21px;
+      color: white;
+      display: flex;
+      line-height: 20px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .card-sub .p2 span{
+      font-size: 27px;
+    }
+
+    .card .card-vedio {
+      cursor: pointer;
+      padding: 0px 0px;
+      height: 300px;
+      /* margin-top: 70px; */
+      width: auto;
+    }
+  
+  
+    .card .card-vedio video {
+      border-radius: 35px;
+      padding: 25px;
+      height: 300px;
+      width: 90%;
+      margin-left: 50px;
+    }
+
+    
+
+    .footer{
+      background-color:  rgb(11, 13, 34) ;
+      padding: 25px 25px;
+}
+
+}
+
+
+@media screen and (max-width: 1220px) {
+  .navbar .nav-buttons {
+   
+    margin-left: 10px;
+}
+
+}
+
+@media only screen and (max-width: 700px) {
+
+  body {
+   align-items: center;
+  }
+  .mobile-container .portfolios .card .img-card img{
+    width: auto;
+    height: auto;
+  }
+  .process-container .process-flow img {
+    width: 480px;
+    height: 320px;
+  }
+  .mobile-container .portfolios .card .img-card img{
+    width: 600px;
+    height: auto;
+  }
+}
+
+
+@media only screen and (max-width: 666px) {
+ .navbar {
+  padding: 25px 25px 25px 25px;
+}
+  .container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Vedio Container Responsive */
+  .card-sub h2 {
+    font-size: 32px;
+  }
+  .card-sub h2 span {
+    font-size: 32px;
+  }
+  .card-sub {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+  }
+  .card-sub .p1 {
+    font-size: 22px;
+    margin-top: 55px;
+  } 
+  .card-sub .p2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .card-sub .p2 span{
+    font-size: 24px;
+  }
+  .container-1 .framer .card .scroll-text{
+    height: 110px;
+  }
+  .container-1 .framer .card .scroll-text p{
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .card .card-btn {
+    margin-top: 20px;
+}
+.card .card-btn button img {
+    width: 220px;
+    height: 63px;
+}
+.card .card-vedio {
+  height: 325px;
+}
+.card .card-vedio video {
+  margin: 0px;
+  border-radius: 35px;
+  padding: 25px;
+  height: 300px;
+  width: 100%;
+}
+
+
+  /* Our Investors Responsive */
+
+  .container-2 .scroll-items .persons .card-img img{
+    height: 68px;
+    width: 82px;
+  }
+  .container-2 .scrol-card h2 {
+    font-size: 28px;  
+  }
+  .container-2 .scroll-items .persons .card-name {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-2 .scroll-items .persons .card-name p {
+    font-size: 14px;
+    padding: 0px;
+    margin: 0;
+    font-weight: 300;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-2 .scroll-items .persons .card-desig p {
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 300;
+  }
+ .container-2 .scroll-items .persons .card-descrp p {
+    margin: 0px;
+    font-family: "Inter", "Inter Placeholder", sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Our Partners Responsive */
+  .container-2 .scroll-items .images .image a img {
+    border-radius: 20px;
+    background-color: white;
+    height: 85px;
+    width: fit-content;
+  }
+
+  /* mobile-container Response */
+  .mobile-container .portfolios{
+    margin-left: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #171c48;
+  }
+  .mobile-container .portfolios .card p{
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  .mobile-container .portfolios .card .img-card img{
+  width: 390px;
+  height: fit-content;
+}
+
+  /* Our Products Responsive */
+  .our-products-container .main-box .text-box h2{
+    margin: 5px;
+    font-size: 28px;
+    line-height: 40px;  
+  }
+  .our-products-container .main-box .text-box p{  
+    font-size: 18px;
+    line-height: 25px;    
+  }
+
+/* Flexibility Response */
+.process-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 0px;
+}
+.process-container .process-flow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  padding: 30px;
+  color: white;
+}
+.process-container .process-flow .text-cards .card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 360px;
+  height: 110px;
+  gap: 18px;
+  border-radius: 8px;
+  padding: 30px;
+}
+.process-container .process-flow .text-cards .card h1 {
+  margin: 0px;
+  font-family: "Inter-SemiBold", "Inter", sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+}
+.process-container .process-flow .text-cards .card p {
+  margin: 0px;
+  font-family: "Inter-SemiBold", "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.process-container .process-flow .images .image-card img {
+  width: 300px;
+  height: 240px;
+}
+
+/* Loan Calculator Responsive */
+.interest-container {
+  padding: 20px;
+  margin: 30px;
+}
+.interest-container .interest-text{
+  font-size: 29px;
+  font-weight: 600;
+  padding: 34px 0px 24px;
+}
+.interest-container .interest-cards .loan-amount span{
+  width: 150px;
+  font-size: 18px;
+  font-family: "Inter-SemiBold", "Inter", sans-serif;
+  font-weight: 800px;
+  background-color: transparent;
+}
+.interest-container .interest-cards {
+  font-size: 17px;
+}
+.interest-container .interest-cards .monthly-payment .card {
+  font-weight: 700;
+  font-size: 16px;
+}
+.interest-container .interest-cards .Loan-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.interest-container .interest-cards .Loan-image .pie-chart{
+  width: 280px;
+  height: 230px;
+}
+
+ /* Our Blog Responsive */
+ .blog-container .blog-text h2{
+  font-size: 34px;
+  font-weight: 600;
+}
+.blog-container .blog-cards .sub-card .card {
+  width: 333px;
+}
+.blog-container .blog-cards .sub-card .card img {
+  width: 330px;
+}
+
+}
+
