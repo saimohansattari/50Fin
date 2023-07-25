@@ -31,6 +31,7 @@ span {
 
       /* Navbar page Css */
 .navbar {
+  z-index: 1;
   position: fixed;
   padding: 25px 0px 25px 105px;
   background-color: rgb(11, 13, 34);
@@ -357,7 +358,6 @@ span {
       cursor: pointer;
       padding: 0px 0px;
       height: 300px;
-      /* margin-top: 70px; */
       width: auto;
     }
   

@@ -69,9 +69,9 @@ function VedioContainer() {
 
                 <div className="card ">
                     <div className="card-vedio">
-                    <video  controls muted>
-                        <source src={FiftyFin_mp} type="video/mp4"  />
-                    </video>
+                         <video muted autoPlay controls>
+                             <source src={FiftyFin_mp} type="video/mp4" />
+                         </video>
 
                     </div>
                 </div>
