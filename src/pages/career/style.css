@@ -1,0 +1,108 @@
+.content{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.careers{
+    height: auto;
+   padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.careers-img{  
+    margin-top: 50px;
+}
+
+.careers-img img{
+    height: 450px;
+    width: 550px;
+    
+}
+
+.careers .careers-text{
+    padding: 30px;
+    color: white;
+    display: flex;
+    width: fit-content;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.careers .careers-text .heading{
+    font-family: "Inter-ExtraBold", "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.careers .careers-text .sub-heading p{
+    margin: 0;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+   
+}
+.careers .careers-text .discription p{
+    margin: 0;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.careers .careers-text .button a{
+    cursor: pointer;
+    border: none;
+    color: black;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 600px;
+    align-items: center;
+    background-color: #24feee;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    width: 340px;
+}
+
+@media only screen and (max-width: 700px) {
+    .careers-img img{
+        height: 350px;
+        width: 350px;      
+    }
+
+    .careers .careers-text .sub-heading p{
+       
+        font-size: 20px;
+        font-weight: 600;
+       
+    }
+    .careers .careers-text .discription p{
+      
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
